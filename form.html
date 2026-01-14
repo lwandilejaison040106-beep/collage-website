@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <style>
+    body {
+      background-color: #fff;
+      margin: auto;
+    }
+
+    form {
+      width: 50%;
+      border: solid #969696;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      color: aqua;
+      font-family: arial;
+    }
+
+    a{
+      text-decoration: none;
+      color: aqua;
+    }
+
+    p {
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0px;
+    }
+
+    div {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+
+    .name {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 10px;
+    }
+
+    .surname {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 118px 1fr;
+      gap: 8px;
+    }
+
+    .course {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 205px 1fr;
+    }
+
+    .contact {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      gap: 5px;
+    }
+
+    .email {
+      width: 90%;
+      height: 40px;
+      padding: 2px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 5px;
+    }
+
+    label {
+      margin-top: 3px;
+      font-size: 23px;
+    }
+
+    .input {
+      border: none;
+      outline: none;
+      font-size: 20px;
+      color: grey;
+      width: 350px;
+      background-color: #fff;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+      -webkit-text-fill-color: #000000;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .green {
+      height: 30px;
+    }
+
+    .red {
+      border: 1px solid grey;
+      height: 30px;
+      min-width: 98%;
+    }
+
+    .send {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 30px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .no {
+      width: 10%px;
+      color: aqua;
+      font-family: arial;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    button {
+      background-color: aqua;
+      width: 180px;
+      height: 50px;
+      font-size: 40px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 15px;
+      margin-right: -50px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <h1><a href="final.html">APPLICATION FORM</a></h1>
+
+    <div class="name">
+      <div class="green"><label>NAME:</label></div>
+      <input type="hidden" name="access_key" value="4b5c21d1-42e8-40e4-874e-9b9e85c1f5e3">
+      <div class="red"><input type="text" name="name" class="input" required></div>
+    </div>
+
+    <div class="surname">
+      <div class="green"><label class="label-name">SURNAME:</label></div>
+      <div class="red"><input type="text" name="surname" class="input" required></div>
+    </div>
+
+
+    <div class="course">
+      <div class="green"><label class="label-name">COURSE/SERVICE:</label></div>
+      <div class="red">
+        <select name="course" class="input" required>
+          <option>Refrigeration</option>
+          <option>TV repairs</option>
+          <option>Computer Reapairs</option>
+          <option>Cellphone Rapairs</option>
+          <option>Microsoft Word</option>
+          <option>Microsoft Powerpoint</option>
+          <option>Microsoft Excel</option>
+          <option>Microsoft Publisher</option>
+          <option>Graphic Design</option>
+          <option>Fashion Design</option>
+          <option>Beauty Design</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="green"> <label class="label-name">CONTACT NO:</label></div>
+      <div class="red"><input type="tel" name="phone" class="input" placeholder="e.g. 0712345678" required></div>
+    </div>
+
+    <div class="email">
+      <div class="green"><label class="label-name">EMAIL ADDRESS:</label></div>
+      <div class="red"><input type="email" name="name" class="input" required></div>
+    </div>
+    <p>Welcome to Kast College, Skills training and Service.<br>
+      We encourage you to fill correctly your details into this for and<br>
+      submit the form. Within a short period one of our agents will contact<br>
+      you, though: calls, emails, or whatsapp. ensure your details are<br> correctly recorded.</p>
+
+    <div class="send">
+      <p class="no">+2781 588 9857</p>
+      <button>Send</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
