@@ -1,0 +1,103 @@
+.background {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  width: 23%;
+  left: 50px;
+  top: 30px;
+}
+
+.menu a {
+  width: 170px;
+  height: 20px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  background: #1cb0e6;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 1px 4px #fff;
+  transition: 0.3s ease all;
+}
+
+.menu a:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.menu a:active {
+  transform: scale(0.9);
+}
+
+.menu {
+  position: absolute;
+  right: 1em;
+  top: 3rem;
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apply-section {
+  position: absolute;
+  right: 20px;
+  top: 140px;
+  width: 50%;
+}
+
+.blue {
+  font-family: arial;
+  letter-spacing: 0.5em;
+  font-size: 15px;
+  text-align: center;
+  color: #1cb0e6;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.purple {
+  font-family: "Chango", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: rgba(0, 17, 128, 0.912);
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+button {
+  width: 30%;
+  height: 100px;
+  font-family: "Chango", sans-serif;
+  font-size: 25px;
+  border: 15px solid rgba(0, 17, 128, 0.912);
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
+  margin-left: 35%;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
