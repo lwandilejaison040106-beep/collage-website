@@ -30,13 +30,15 @@
 
     .content {
       width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     .quality-skill {
       background-color: red;
       font-weight: bold;
-      width: 35%;
-      height: 50px;
+      width: 80%;
+      height: auto;
       font-size: 35px;
       color: white;
       border-radius: 20px;
@@ -53,37 +55,33 @@
     }
 
     .position {
-      position: absolute;
-      top: 30%;
-      right: 20%;
+      margin-top: 10%;
+      margin-right: 10%;
     }
 
     .red {
       color: red;
       font-weight: bold;
       font-size: 40px;
+      margin-top: 15%;
       margin-bottom: 20px;
-      ;
       text-align: center;
     }
 
     img {
-      width: 130%;
-      margin: 0px 0px;
-      text-transform: capitalize;
+      width: 100%;
     }
 
     .send {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      gap: 60px;
-      margin-top: -20px;
-      margin-bottom: 0px;
+      position: absolute;
+      right: 0px;
+      width: 50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
     .no {
-      width: 10%px;
+      width: 100%;
       color: aqua;
       font-family: arial;
       font-size: 40px;
@@ -93,21 +91,170 @@
 
     button {
       background-color: aqua;
-      width: 250px;
+      width: 70%;
       height: 50px;
-      font-size: 40px;
       color: white;
       font-weight: bold;
       border: none;
       border-radius: 15px;
-      margin-right: 150px;
-      margin-top: -40px;
       padding-bottom: 15px;
     }
 
     button a {
+      font-size: 40px;
       color: white;
       font-size: 35px;
+    }
+
+    @media (max-width: 1254px) {
+      .quality-skill {
+        font-size: 30px;
+      }
+
+      ul {
+        font-size: 25px;
+      }
+
+      .no {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+
+      .quality-skill {
+        font-size: 28px;
+      }
+
+      ul {
+        font-size: 20px;
+      }
+
+      .send {
+        margin-top: 0px;
+      }
+
+      .red {
+        font-size: 30px;
+        margin-top: 0px;
+      }
+
+      .no {
+        font-size: 37px;
+      }
+
+      button a {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      h1 {
+        font-size: 60px;
+      }
+
+      .quality-skill {
+        font-size: 20px;
+      }
+
+      ul {
+        font-size: 15px;
+      }
+
+      .send {
+        margin-top: 15px;
+      }
+
+      .red {
+        font-size: 25px;
+        margin-top: 0px;
+      }
+
+      .no {
+        margin-top: 10px;
+        font-size: 27px;
+      }
+
+      button {
+        padding: 0px;
+      }
+
+      button a {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .position {
+        top: 14%;
+      }
+
+      .quality-skill {
+        font-size: 14px;
+      }
+
+      .red {
+        font-size: 15px;
+      }
+
+      ul {
+        font-size: 13px;
+      }
+
+      .send {
+        margin-top: 0px;
+      }
+
+      .no {
+        font-size: 16px;
+      }
+
+      button {
+        margin-top: 5px;
+        height: 30px;
+      }
+
+      button a {
+        padding-top: 10px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 27px;
+      }
+
+      .quality-skill {
+        font-size: 10px;
+        padding: 5px;
+      }
+
+      .red {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        font-size: 7px;
+      }
+
+      .no {
+        font-size: 10px;
+      }
+
+      button {
+        height: 20px;
+      }
+
+      button a {
+        font-size: 10px;
+      }
     }
   </style>
 </head>
@@ -116,39 +263,44 @@
   <h1><a href="index.html">OUR COURSES</a></h1>
 
   <div class="content">
-    <p class="quality-skill">Technical Repairs Courses</p>
     <div>
-      <Ul style="list-style-type: square">
-        <li>Refrigeration</li>
-        <li>TV repairs</li>
-        <li>Computer Reapairs</li>
-        <li>Cellphone Rapairs</li>
-      </Ul>
+      <p class="quality-skill">Technical Repairs Courses</p>
+      <div>
+        <Ul style="list-style-type: square">
+          <li>Refrigeration</li>
+          <li>TV repairs</li>
+          <li>Computer Reapairs</li>
+          <li>Cellphone Rapairs</li>
+        </Ul>
 
-      <P class="quality-skill">Computer literacy</P>
-      <Ul style="list-style-type: square;">
-        <li>Microsoft Word</li>
-        <li>Microsoft Powerpoint</li>
-        <li>Microsoft Excel</li>
-        <li>Microsoft Publisher</li>
-      </Ul>
+        <P class="quality-skill">Computer literacy</P>
+        <Ul style="list-style-type: square;">
+          <li>Microsoft Word</li>
+          <li>Microsoft Powerpoint</li>
+          <li>Microsoft Excel</li>
+          <li>Microsoft Publisher</li>
+        </Ul>
 
-      <P class="quality-skill">Designs</P>
-      <Ul style="list-style-type: square;">
-        <li>Graphic Design</li>
-        <li>Fashion Design</li>
-        <li>Beauty Design</li>
-      </Ul>
-    </div>
+        <P class="quality-skill">Designs</P>
+        <Ul style="list-style-type: square;">
+          <li>Graphic Design</li>
+          <li>Fashion Design</li>
+          <li>Beauty Design</li>
+        </Ul>
+      </div>
 
-    <div class="position">
-      <P class="red">QUALITY SKILLS TRAINING</P>
-      <img src="image/Our Course.png">
     </div>
-    <div class="send">
-      <h3 class="no">+2781 588 9857</h3>
-      <button><a href="form.html">Apply Now</a></button>
+    <div>
+      <div class="position">
+        <P class="red">QUALITY SKILLS TRAINING</P>
+        <img src="image/Our Course.png">
+      </div>
     </div>
+  </div>
+
+  <div class="send">
+    <h3 class="no">+2781 588 9857</h3>
+    <button><a href="form.html">Apply Now</a></button>
   </div>
 </body>
 

@@ -27,14 +27,13 @@
 
     .red {
       color: red;
-      width: 100%;
       font-size: 80px;
       margin-bottom: 0;
     }
 
     .content {
       display: grid;
-      grid-template-columns: 50% 1fr;
+      grid-template-columns: 1fr 1fr;
     }
 
     img {
@@ -45,7 +44,7 @@
       color: #fff;
       font-family: arial;
       font-size: 50px;
-      width: 80%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -81,7 +80,6 @@
 
     .skill {
       display: inline;
-      margin-left: 20%;
       font-size: 45px;
       color: yellow;
       word-spacing: 5px;
@@ -89,21 +87,228 @@
       letter-spacing: 3px;
     }
 
+    .footer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 1fr;
+    }
+
     button {
       display: inline-block;
-      width: 250px;
-      height: 70px;
-      font-size: 41px;
+      width: 80%;
+      height: 60px;
       border: none;
       border-radius: 10px;
       background-color: yellow;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 40px;
     }
 
     button a {
+      font-size: 41px;
       text-decoration: none;
       color: black;
+    }
+
+    @media (max-width: 1280px) {
+      h1 {
+        font-size: 80px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+
+      .red {
+        font-size: 70px;
+      }
+
+      h3 {
+        font-size: 50px;
+      }
+
+      .skill {
+        font-size: 40px;
+      }
+
+      button a {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 1254px) {
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+
+      .red {
+        font-size: 50px;
+      }
+
+      h3 {
+        font-size: 50px;
+      }
+
+      button {
+        margin-top: 35px;
+      }
+
+      button a {
+        font-size: 27px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .skill {
+        font-size: 30px;
+      }
+
+      button {
+        margin-top: 17px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 25px;
+      }
+
+      .red {
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: 40px;
+        margin-top: 0px;
+      }
+
+      .best-choice {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .black-text {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .skill {
+        font-size: 25px;
+      }
+
+      button {
+        margin-top: 20px;
+        height: 40px;
+      }
+
+      button a {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 20px;
+        margin-bottom: 0px;
+      }
+
+      h1 a {
+        text-decoration-thickness: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .red {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-top: 0px;
+      }
+
+      .best-choice {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+      }
+
+      .black-text {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .skill {
+        font-size: 15px;
+      }
+
+      button {
+        margin-top: 10px;
+        height: 30px;
+      }
+
+      button a {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 15px;
+        margin-bottom: 0px;
+      }
+
+      h1 a {
+        text-decoration-thickness: 5px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .red {
+        font-size: 15px;
+      }
+
+      h3 {
+        font-size: 10px;
+        margin-top: 0px;
+      }
+
+      .best-choice {
+        font-size: 7px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+      }
+
+      .black-text {
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+
+      .skill {
+        font-size: 10px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 8px;
+        height: 20px;
+      }
+
+      button a {
+        font-size: 8px;
+      }
     }
   </style>
 </head>
@@ -114,7 +319,7 @@
       <img src="image/contact us.png" alt="Student graduate">
     </div>
     <div>
-      <h1><a href="indax.html">CONTACT US</a></h1>
+      <h1><a href="index.html">CONTACT US</a></h1>
       <P>We're always intrestered in getting new students, who are passionate about, learning a new skill or improve
         their
         career</P>
@@ -127,8 +332,12 @@
       <p class="email">kastcollegeskills@gmil.com</p>
     </div>
   </div>
-  <button><a href="form.html">Apply Now</a></button>
-  <p class="skill">CHOOSE A SKILL OF YOUR CHOICE</p>
+
+  <div class="footer">
+    <button><a href="form.html">Apply Now</a></button>
+    <p class="skill">CHOOSE A SKILL OF YOUR CHOICE</p>
+  </div>
+
 </body>
 
 </html>
