@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application Form</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #fff;
       margin: auto;
@@ -17,7 +21,7 @@
       border: solid #969696;
       margin-right: auto;
       margin-left: auto;
-      padding: 10px;
+      padding: 5px;
     }
 
     h1 {
@@ -49,69 +53,70 @@
       grid-template-columns: 200px 1fr;
     }
 
-    .name {
-      /* position: absolute; */
-      width: 90%;
+    .row-div-1 {
+      width: 100%;
       height: 40px;
-      padding: 2px;
-      margin-bottom: 20px;
+      padding: 0px;
       display: grid;
       grid-template-columns: 72px 1fr;
+      align-items: center;
       gap: 10px;
     }
 
-    .surname {
-      width: 90%;
+    .row-div-2 {
+      width: 100%;
       height: 40px;
       padding: 2px;
-      margin-bottom: 20px;
       display: grid;
       grid-template-columns: 118px 1fr;
+      align-items: center;
       gap: 8px;
     }
 
-    .course {
-      width: 90%;
+    .row-div-3 {
+      width: 100%;
       height: 40px;
       padding: 2px;
-      margin-bottom: 20px;
       display: grid;
       grid-template-columns: 205px 1fr;
+      align-items: center;
     }
 
-    .contact {
-      width: 90%;
+    .row-div-4 {
+      width: 100%;
       height: 40px;
       padding: 2px;
-      margin-bottom: 20px;
       display: grid;
       grid-template-columns: 155px 1fr;
+      align-items: center;
       gap: 5px;
     }
 
-    .email {
-      width: 90%;
+    .row-div-5 {
+      width: 100%;
       height: 40px;
       padding: 2px;
-      margin-bottom: 20px;
       display: grid;
       grid-template-columns: 190px 1fr;
+      align-items: center;
       gap: 5px;
     }
 
     label {
+      display: inline;
       margin-top: 3px;
       font-size: 23px;
     }
 
-    .input {
-      z-index: 1;
+    input,
+    select {
       border: none;
       outline: none;
       font-size: 15px;
       color: grey;
-      width: 250px;
-      background-color: #fff;
+      width: 100%;
+      padding: 0px;
+      box-sizing: border-box;
     }
 
     input:-webkit-autofill,
@@ -124,18 +129,18 @@
       transition: background-color 5000s ease-in-out 0s;
     }
 
-    .green {
-      height: 30px;
+    .label-div {
+      /* height: 30px; */
     }
 
-    .red {
+    .input-div {
       z-index: 100;
       border: 1px solid grey;
       height: 30px;
       min-width: 98%;
     }
 
-    .send {
+    .submit-button {
       display: flex;
       justify-content: end;
       align-items: center;
@@ -165,11 +170,11 @@
       margin-right: -50px;
     }
 
+    /* Dont keep the the desktop grid layout active on mobile */
     @media (max-width: 1024px) {
 
       form {
-        width: 70%;
-        padding: 10px;
+        width: 80%;
       }
 
       label {
@@ -178,10 +183,12 @@
 
       p {
         font-size: 1.2rem;
+        flex-wrap: wrap;
       }
 
-      .input {
-        width: 100%;
+      input,
+      select {
+
         font-size: 12px;
       }
 
@@ -203,7 +210,6 @@
 
       form {
         width: 80%;
-        padding: 20px;
       }
 
       div {
@@ -217,30 +223,29 @@
         font-size: 2rem;
       }
 
-      .name {
-        width: 95%;
-        padding: 2px;
+      .row-div-1 {
+        width: 100%;
         grid-template-columns: 58px 1fr;
         gap: 10px;
       }
 
-      .surname {
-        width: 95%;
+      .row-div-2 {
+        width: 100%;
         grid-template-columns: 95px 1fr;
       }
 
-      .course {
-        width: 95%;
+      .row-div-3 {
+        width: 100%;
         grid-template-columns: 160px 1fr;
       }
 
-      .contact {
-        width: 95%;
+      .row-div-4 {
+        width: 100%;
         grid-template-columns: 120px 1fr;
       }
 
-      .email {
-        width: 95%;
+      .row-div-5 {
+        width: 100%;
         grid-template-columns: 150px 1fr;
       }
 
@@ -253,45 +258,70 @@
       }
 
       p {
-        font-size: 0.9rem;
+        flex-wrap: wrap;
       }
 
       button {
-        width: 30%;
-        height: 35px;
-        font-size: 20px;
+        width: 70px;
+        height: 20px;
+        font-size: 15px;
         margin-right: 0px;
       }
 
       .no {
-        font-size: 19px;
+        font-size: 15px;
       }
     }
 
     @media (max-width: 480px) {
 
-      body {
-        width: 80%;
-        padding: 30px;
-        margin-right: 50px;
-      }
-
-
       form {
-        width: 10%;
-        padding: 20px;
+        width: 100%;
       }
 
-      h1 {
-        font-size: 24px;
+      p {
+        flex-wrap: wrap;
+        font-size: 10px;
       }
 
-      h2 {
-        font-size: 2px;
+      .row-div-1,
+      .row-div-2,
+      .row-div-3,
+      .row-div-4,
+      .row-div-5 {
+        display: block;
+        margin-bottom: 60px;
+      }
+
+      .label-div,
+      .input-div {
+        width: 100%;
+      }
+
+      label {
+        font-size: 10px;
+        display: block;
+        margin: 0 0 4px 0;
+        line-height: 1.2;
+      }
+
+      .input,
+      select {
+        display: block;
+        width: 100%;
+        margin: 0;
+        font-size: 10px;
       }
 
       button {
-        margin-left: 0px;
+        width: 50px;
+        height: 10px;
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .no {
+        font-size: 8px;
       }
     }
   </style>
@@ -302,22 +332,24 @@
 
     <h1><a href="index.html">APPLICATION FORM</a></h1>
 
-    <div class="name">
-      <div class="green"><label>NAME:</label></div>
+    <!-- Two-column from layout using Css Grid -->
+
+    <div class="row-div-1">
+      <div class="label-div"><label for="name">NAME:</label></div>
       <input type="hidden" name="access_key" value="4b5c21d1-42e8-40e4-874e-9b9e85c1f5e3">
-      <div class="red"><input type="text" name="name" class="input" required></div>
+      <div class="input-div"><input type="text" name="name" id="name" required></div>
     </div>
 
-    <div class="surname">
-      <div class="green"><label class="label-name">SURNAME:</label></div>
-      <div class="red"><input type="text" name="surname" class="input" required></div>
+    <div class="row-div-2">
+      <div class="label-div"><label for="surname">SURNAME:</label></div>
+      <div class="input-div"><input type="text" name="surname" id="surname" required></div>
     </div>
 
 
-    <div class="course">
-      <div class="green"><label class="label-name">COURSE/SERVICE:</label></div>
-      <div class="red">
-        <select name="course" class="input" required>
+    <div class="row-div-3">
+      <div class="label-div"><label for="course">COURSE/SERVICE:</label></div>
+      <div class="input-div">
+        <select name="course" id="course" required>
           <option>Refrigeration</option>
           <option>TV repairs</option>
           <option>Computer Reapairs</option>
@@ -333,21 +365,21 @@
       </div>
     </div>
 
-    <div class="contact">
-      <div class="green"> <label class="label-name">CONTACT NO:</label></div>
-      <div class="red"><input type="tel" name="phone" class="input" placeholder="e.g. 0712345678" required></div>
+    <div class="row-div-4">
+      <div class="label-div"> <label for="tel">CONTACT NO:</label></div>
+      <div class="input-div"><input type="tel" name="phone" id="tel" placeholder="e.g. 0712345678" required></div>
     </div>
 
-    <div class="email">
-      <div class="green"><label class="label-name">EMAIL ADDRESS:</label></div>
-      <div class="red"><input type="email" name="name" class="input" required></div>
+    <div class="row-div-5">
+      <div class="label-div"><label for="email">EMAIL ADDRESS:</label></div>
+      <div class="input-div"><input type="email" name="name" id="email" required></div>
     </div>
-    <p>Welcome to Kast College, Skills training and Service.<br>
-      We encourage you to fill correctly your details into this for and<br>
-      submit the form. Within a short period one of our agents will contact<br>
-      you, though: calls, emails, or whatsapp. ensure your details are<br> correctly recorded.</p>
+    <p>Welcome to Kast College, Skills training and Service.
+      We encourage you to fill correctly your details into this for and
+      submit the form. Within a short period one of our agents will contact
+      you, though: calls, emails, or whatsapp. ensure your details are correctly recorded.</p>
 
-    <div class="send">
+    <div class="submit-button">
       <p class="no">+2781 588 9857</p>
       <button>Send</button>
     </div>
