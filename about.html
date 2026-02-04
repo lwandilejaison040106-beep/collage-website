@@ -8,6 +8,10 @@
   <title>About Page</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: rgba(255, 0, 0, 0.699);
       padding: 20px;
@@ -118,6 +122,10 @@
     }
 
     @media (max-width: 1254px) {
+      p {
+        word-wrap: break-word;
+      }
+
       .yellow-backgrond {
         width: 30%;
         font-size: 20px;
@@ -268,7 +276,11 @@
 
     @media (max-width: 480px) {
       p {
-        font-size: 0.4rem;
+        font-size: 7px;
+      }
+
+      .content {
+        display: block;
       }
 
       h1 {
@@ -281,6 +293,9 @@
 
       .yellow-backgrond {
         font-size: 10px;
+        height: 15px;
+        padding-top: 2px;
+        margin-bottom: 10px;
       }
 
       .transforming {
@@ -288,26 +303,56 @@
       }
 
       ul {
-        line-height: 7px;
-        width: 90%;
-        font-size: 6px;
+        line-height: 10px;
+        font-size: 7px;
       }
 
       .h3 {
+        margin-top: 6px;
         font-size: 10px;
+        margin-right: 100px;
       }
 
       button {
+        width: 40px;
         margin-top: 8px;
-        margin-left: 70px;
+        margin-left: 0px;
       }
 
       button a {
-        font-size: 10px;
+        font-size: 5px;
       }
     }
 
-    */
+    @media (max-width: 360px) {
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .yellow-backgrond {
+        width: 30%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: block;
+      }
+
+      .transforming {
+        display: block;
+        width: 90%;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+    }
   </style>
 </head>
 
@@ -316,11 +361,10 @@
     <h1><a href="index.html"><span>About </span>Kast College</a></h1>
 
     <h2>kanene straight training center (pty)ltd</h2>
-    <p>kanene straight center (pty)ltd (KAST COLLAGE) is a registered and non-credit skills training center that is
-      located at 310 Demat Road.<br>
-      Welbedatch West Chatsworth. Our forcus is to empower community with really skills that will connect our student
-      tothe world of business and<br>
-      contribute the economy building of their communications</p>
+    <p>kanene straight center (pty)ltd (KAST COLLAGE) is a registered and non-credit
+      skills training center that is located at 310 Demat Road. Welbedatch West
+      Chatsworth. Our forcus is to empower community with really skills that will connect our student
+      tothe world of business and contribute the economy building of their communications</p>
 
     <h2 class="blue">We give you a skill, you become your own boss.</h2>
   </div>

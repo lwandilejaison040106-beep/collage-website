@@ -12,14 +12,14 @@
       padding: 20px;
     }
 
-    h1 {
+    Center {
       color: yellow;
       font-size: 100px;
       margin-bottom: 40px;
       font-family: arial;
     }
 
-    h1 a {
+    center a {
       color: yellow;
       text-decoration-line: underline;
       text-decoration-thickness: 25px;
@@ -44,7 +44,6 @@
       color: #fff;
       font-family: arial;
       font-size: 50px;
-      width: 90%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -111,7 +110,7 @@
     }
 
     @media (max-width: 1280px) {
-      h1 {
+      center {
         font-size: 80px;
       }
 
@@ -137,12 +136,8 @@
     }
 
     @media (max-width: 1254px) {
-      h1 {
+      center {
         font-size: 50px;
-      }
-
-      p {
-        font-size: 30px;
       }
 
       .red {
@@ -173,12 +168,14 @@
     }
 
     @media (max-width: 1024px) {
-      h1 {
+      center a {
         font-size: 40px;
+        text-decoration-thickness: 10px;
       }
 
       p {
         font-size: 25px;
+        word-wrap: break-word;
       }
 
       .red {
@@ -196,6 +193,7 @@
       }
 
       .black-text {
+        word-wrap: break-word;
         font-size: 20px;
         margin-bottom: 15px;
       }
@@ -215,9 +213,9 @@
     }
 
     @media (max-width: 768px) {
-      h1 {
+      center {
         font-size: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
       }
 
       h1 a {
@@ -263,9 +261,12 @@
     }
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 15px;
-        margin-bottom: 0px;
+      center {
+        font-size: 1rem;
+      }
+
+      .content{
+        display: block;
       }
 
       h1 a {
@@ -273,7 +274,7 @@
       }
 
       p {
-        font-size: 12px;
+        font-size: 7px;
       }
 
       .red {
@@ -287,13 +288,13 @@
 
       .best-choice {
         font-size: 7px;
-        letter-spacing: 3px;
-        margin-bottom: 10px;
+        margin-bottom: 5;
+        
       }
 
       .black-text {
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 7px;
+        margin-bottom: 5px;
       }
 
       .skill {
@@ -314,15 +315,16 @@
 </head>
 
 <body>
+  <Center><a href="index.html">CONTACT US</a></Center>
   <div class="content">
+    
     <div>
       <img src="image/contact us.png" alt="Student graduate">
     </div>
     <div>
-      <h1><a href="index.html">CONTACT US</a></h1>
-      <P>We're always intrestered in getting new students, who are passionate about, learning a new skill or improve
-        their
-        career</P>
+      <P>We're always intrestered in getting new students, 
+        who are passionate about, learning a new skill
+         or improve their career</P>
 
       <h1 class="red">KAST COLLEGE</h1>
       <p class="best-choice">The best Choice</p>

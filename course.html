@@ -74,8 +74,7 @@
 
     .send {
       position: absolute;
-      right: 0px;
-      width: 50%;
+      right: 10px;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -227,15 +226,30 @@
 
     @media (max-width: 480px) {
       h1 {
-        font-size: 27px;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 400px;
+      }
+
+      .content {
+        display: block;
+      }
+
+      img {
+        position: absolute;
+        top: 80px;
       }
 
       .quality-skill {
+        width: 30%;
         font-size: 10px;
         padding: 5px;
+        margin-top: ;
       }
 
       .red {
+        position: absolute;
+        top: 50px;
         font-size: 15px;
         margin-bottom: 10px;
       }
@@ -244,16 +258,40 @@
         font-size: 7px;
       }
 
+      .send {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
       .no {
         font-size: 10px;
+        margin-left: 150px;
+        margin-top: 10px;
       }
 
       button {
-        height: 20px;
+        width: 50%;
+        height: 18px;
       }
 
       button a {
         font-size: 10px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 310px;
+      }
+
+      .send {
+        margin-top: -30px;
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
     }
   </style>
@@ -299,8 +337,9 @@
   </div>
 
   <div class="send">
-    <h3 class="no">+2781 588 9857</h3>
     <button><a href="form.html">Apply Now</a></button>
+    <h3 class="no">+2781 588 9857</h3>
+
   </div>
 </body>
 
