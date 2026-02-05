@@ -34,7 +34,7 @@ p {
   color: white;
   text-decoration: none;
   padding: 3px 0px;
-  margin-left: 5px;
+  margin-left: 0px;
   border-radius: 10px;
   font-weight: bold;
   box-shadow: 1px 4px #fff;
@@ -332,4 +332,3 @@ h2 {
     margin-top: 19px;
   }
 }
-

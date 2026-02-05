@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Page</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: rgb(144, 235, 238);
-      padding: 20px;
+      padding: 0px;
     }
 
     Center {
@@ -107,54 +111,6 @@
       font-size: 41px;
       text-decoration: none;
       color: black;
-    }
-
-    @media (max-width: 1280px) {
-      center {
-        font-size: 80px;
-      }
-
-      p {
-        font-size: 30px;
-      }
-
-      .red {
-        font-size: 70px;
-      }
-
-      h3 {
-        font-size: 50px;
-      }
-
-      .skill {
-        font-size: 40px;
-      }
-
-      button a {
-        font-size: 30px;
-      }
-    }
-
-    @media (max-width: 1254px) {
-      center {
-        font-size: 50px;
-      }
-
-      .red {
-        font-size: 50px;
-      }
-
-      h3 {
-        font-size: 50px;
-      }
-
-      button {
-        margin-top: 35px;
-      }
-
-      button a {
-        font-size: 27px;
-      }
     }
 
     @media (max-width: 1200px) {
@@ -260,12 +216,12 @@
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 360px) {
       center {
-        font-size: 1rem;
+        font-size: 1.7rem;
       }
 
-      .content{
+      .content {
         display: block;
       }
 
@@ -274,41 +230,48 @@
       }
 
       p {
-        font-size: 7px;
-      }
-
-      .red {
         font-size: 15px;
       }
 
+      .red {
+        font-size: 18px;
+      }
+
       h3 {
-        font-size: 10px;
+        font-size: 18px;
         margin-top: 0px;
       }
 
       .best-choice {
-        font-size: 7px;
+        font-size: 10px;
         margin-bottom: 5;
-        
+
       }
 
       .black-text {
-        font-size: 7px;
+        font-size: 15px;
         margin-bottom: 5px;
       }
 
+      .footer {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+      }
+
       .skill {
-        font-size: 10px;
+        font-size: 15px;
+        word-spacing: 0;
+        letter-spacing: 0;
       }
 
       button {
-        width: 100%;
-        margin-top: 8px;
+        width: 100px;
+        margin-top: 13px;
         height: 20px;
       }
 
       button a {
-        font-size: 8px;
+        font-size: 10px;
       }
     }
   </style>
@@ -317,14 +280,14 @@
 <body>
   <Center><a href="index.html">CONTACT US</a></Center>
   <div class="content">
-    
+
     <div>
       <img src="image/contact us.png" alt="Student graduate">
     </div>
     <div>
-      <P>We're always intrestered in getting new students, 
+      <P>We're always intrestered in getting new students,
         who are passionate about, learning a new skill
-         or improve their career</P>
+        or improve their career</P>
 
       <h1 class="red">KAST COLLEGE</h1>
       <p class="best-choice">The best Choice</p>

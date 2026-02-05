@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Courses</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: rgba(0, 38, 255, 0.705);
     }
@@ -15,7 +19,6 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 100px;
       color: aqua;
-      margin-left: 100px;
       margin-bottom: -10px;
     }
 
@@ -105,19 +108,6 @@
       font-size: 35px;
     }
 
-    @media (max-width: 1254px) {
-      .quality-skill {
-        font-size: 30px;
-      }
-
-      ul {
-        font-size: 25px;
-      }
-
-      .no {
-        font-size: 40px;
-      }
-    }
 
     @media (max-width: 1200px) {
 
@@ -202,7 +192,7 @@
       }
 
       ul {
-        font-size: 13px;
+        font-size: 15px;
       }
 
       .send {
@@ -224,11 +214,11 @@
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 360px) {
       h1 {
-        font-size: 1rem;
+        font-size: 1.7rem;
         text-align: center;
-        margin-bottom: 400px;
+        margin-bottom: 320px;
       }
 
       .content {
@@ -237,42 +227,44 @@
 
       img {
         position: absolute;
-        top: 80px;
+        left: 0;
+        top: 100px;
       }
 
       .quality-skill {
-        width: 30%;
-        font-size: 10px;
+        text-align: center;
+        width: 80%;
+        font-size: 18px;
         padding: 5px;
-        margin-top: ;
+        margin-top: 10px;
       }
 
       .red {
         position: absolute;
-        top: 50px;
-        font-size: 15px;
-        margin-bottom: 10px;
+        top: 70px;
+        font-size: 18px;
       }
 
       ul {
-        font-size: 7px;
+        font-size: 15px;
       }
 
       .send {
-        position: static;
+        width: 90%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 100px 1fr;
       }
 
       .no {
-        font-size: 10px;
-        margin-left: 150px;
-        margin-top: 10px;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 7px;
       }
 
       button {
-        width: 50%;
-        height: 18px;
+        width: 80%;
+        height: 20px;
+        margin-left: 0;
       }
 
       button a {
